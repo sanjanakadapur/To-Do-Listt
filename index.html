@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My To-Do List</h1>
+        <h3>"One task at a time, one step closer to success."</h3>
+        <div class="image">
+            <img src="image copy.png" alt="My image">
+
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button id="addTaskBtn">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+
+        <div class="tasks-container">
+            <div class="tasks-header">
+                <h2>Tasks</h2>
+                <p id="taskCount">0 tasks</p>
+            </div>
+
+            <ul id="tasksList"></ul>
+
+            <div class="clear-container">
+                <button id="clearCompletedBtn">Clear Completed</button>
+                <button id="clearAllBtn">Clear All</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
